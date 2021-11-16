@@ -1,0 +1,49 @@
+@import "_variables";
+@import "HeaderMenu";
+@import "Slider";
+
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family:'Manrope',sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #000000;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+input{
+  color: #000000;
+}
+
+.container{
+  position: relative;
+  margin: 0 auto;
+  width: 1603px;
+  padding: 0;
+}
+
+@media (min-width: 1400px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 100%;
+  }
+}
+

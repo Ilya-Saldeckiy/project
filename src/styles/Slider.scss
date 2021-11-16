@@ -1,0 +1,43 @@
+
+@import "variables";
+
+.slick{
+  &-slide{
+    padding-right: 30px;
+  }
+}
+
+.slider {
+  &__slide{
+    height: auto;
+  }
+
+  &__img-block{
+    margin-right: auto;
+  }
+
+  &__text-block{
+    width: 650px;
+    padding-top: 200px;
+    text-align: right;
+  }
+
+  &__caption{
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 83px;
+    margin-bottom: 20px;
+    color: $green;
+  }
+
+  &__text{
+    font-size: 18px;
+    line-height: 32px;
+    opacity: 0.8;
+    color: $black;
+  }
+}
+
+.slider__slide:nth-child(2n){
+  flex-direction: row-reverse;
+}

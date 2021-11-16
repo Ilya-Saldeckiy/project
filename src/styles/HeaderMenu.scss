@@ -1,0 +1,41 @@
+
+@import "_variables";
+
+.header{
+  align-items: center;
+  padding-top: 32px;
+  margin-bottom: 30px;
+
+  &__logo{
+      margin-right: auto;
+  }
+
+  &__list{
+    margin-right: 100px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+
+    &-item{
+      cursor: pointer;
+      color: $green;
+      font-size: 16px;
+      line-height: 20px;
+      &:not(:last-child){
+        margin-right: 30px;
+      }
+    }
+  }
+
+  &__btn{
+    background-color: $green;
+    font-size: 18px;
+    line-height: 20px;
+    color: white;
+    width: 160px;
+    height: 40px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+  }
+}
