@@ -15,9 +15,18 @@ function HeaderMenu() {
                 </svg>
             </a>
             <ul className="d-flex list-reset header__list">
-                <li className="header__list-item">Элемент 1</li>
-                <li className="header__list-item">Элемент 2</li>
-                <li className="header__list-item">Элемент 3</li>
+                <li className="header__list-item">
+                    <a href="#about">О нас</a>
+                </li>
+                <li className="header__list-item">
+                    <a href="/services">Услуги</a>
+                </li>
+                <li className="header__list-item">
+                    <a href="/portfolio">Портфолио</a>
+                </li>
+                <li className="header__list-item">
+                    <a href="#contact">Контакты</a>
+                </li>
             </ul>
             <button className="header__btn" onClick={call}>89102413077</button>
         </header>
