@@ -1,0 +1,41 @@
+@import "_variables";
+
+@include reset;
+
+.Cards{
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.card{
+  width: 100%;
+  max-width: 350px;
+  padding: 22px 16px;
+  border: 1px solid $card-border;
+  border-radius: 0;
+
+  &:not(:last-child){
+    margin-right: 40px;
+  }
+
+  &__caption-block{
+    margin-bottom: 12px;
+    svg{
+      margin-right: 20px;
+      width: 48px;
+    }
+  }
+
+  &__caption{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: $green;
+  }
+
+  &__text{
+    font-size: 14px;
+    line-height: 24px;
+    color: $black;
+  }
+}

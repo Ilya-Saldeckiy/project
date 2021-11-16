@@ -1,6 +1,7 @@
 import React from "react";
 import HeaderMenu from "../HeaderMenu/HeaderMenu";
 import Slider from "../Slider/Slider";
+import Cards from "../Cards/Cards"
 
 function HomePage(props) {
 
@@ -10,9 +11,7 @@ function HomePage(props) {
         <div>
             <HeaderMenu history={history}/>
             <Slider />
-            <div className="container">
-
-            </div>
+            <Cards />
         </div>
     )
 }
