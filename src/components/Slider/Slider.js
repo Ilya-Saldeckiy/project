@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 
 import slide1 from "../../images/slide-1.jpg"
+import slide2 from "../../images/slide-2.jpg"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -18,7 +19,7 @@ function Slider1() {
         },
         {
             id: 1,
-            img: slide1,
+            img: slide2,
             caption: 'Kembang Flower Mantap',
             text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s',
             link: '/product-2'
