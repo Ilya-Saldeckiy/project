@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import icoList from "../../images/list-ico.svg";
 
 function Services() {
@@ -24,18 +24,24 @@ function Services() {
             text: 'Услуга 4',
             price: 500
         },
+        {
+            id: 4,
+            text: 'Услуга 5',
+            price: 600
+        },
     ];
 
+    const [isActive, setActive] = useState(true);
 
 
     return(
         <div className="services__position">
             <h2 className="services__tittle">Услуги</h2>
-            <div className="d-flex">
+            <div className="d-flex align-items-start">
                 <img className="services__mainImg" src="http://dummyimage.com/500" alt=""/>
-                <div className="services__item-position">
+                <div className={isActive ? "services__item-position" : "services__item-position active"}>
                     {items.map(items => (
-                        <div className="d-flex services__item" key={items.id}>
+                        <div className="services__item" key={items.id}>
                             <div className="services__text-block">
                                 <p className="services__text">{items.text}</p>
                             </div>
@@ -43,7 +49,12 @@ function Services() {
                             <img className="services__img" src={icoList} alt=""/>
                         </div>
                     ))}
-                    <a className="services__link" href="/services">Показать все услуги</a>
+                    <button onClick={() => setActive(false)} className={isActive ? "services__link" : "services__link-disable"}>
+                        Показать все услуги
+                    </button>
+                    <button onClick={() => setActive(true)} className={isActive ? "services__link-disable" : "services__link"}>
+                        Скрыть все услуги
+                    </button>
                 </div>
             </div>
         </div>

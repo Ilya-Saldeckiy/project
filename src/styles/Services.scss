@@ -17,11 +17,12 @@
 
   &__item{
     width: 100%;
-    align-items: center;
     border-bottom: 1px solid #dddddd;
     padding-bottom: 22px;
     padding-left: 16px;
     padding-right: 16px;
+    display: flex;
+    align-items: flex-start;
 
     &:not(:last-child){
       margin-bottom: 30px;
@@ -29,6 +30,10 @@
 
     &-position{
       width: 100%;
+    }
+
+    &:nth-child(n+5){
+      display: none;
     }
   }
 
@@ -62,10 +67,20 @@
     text-transform: uppercase;
     color: white;
     transition: opacity ease-in-out 0.3s;
+    outline: none;
+    border: none;
 
     &:hover{
       color: white;
       opacity: 0.9;
     }
+
+    &-disable{
+      display: none;
+    }
   }
+}
+
+.active .services__item:nth-child(n+5){
+    display: flex;
 }
